@@ -223,7 +223,7 @@ ORDER BY   매입합산 DESC,매출합산 DESC ;
 -- ORDER BY io_pcode;
 
 
-SELECT io_div,
+SELECT iotbl_memo_div,
 SUM(io_quan * io_iprice) AS 매입합산,
 SUM(io_quan * io_oprice) AS 매출합산
 FROM view_iolist
